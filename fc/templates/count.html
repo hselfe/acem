@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/media/favicon.ico">
+
+    <title>FutureCarSales</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <style>
+      .btn-group, .btn-group-vertical {
+        position: absolute;
+        right:    0;
+        bottom:   0;
+        margin-right: 15px;
+        margin-bottom: 15px;
+      }
+    </style>
+    <!-- <link href="album.css" rel="stylesheet">-->
+
+    <!-- POPUP WINDOW -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  </head>
+  <body>
+
+  <div id="dialog" title="placeholder">
+  </div>
+
+    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="/">FutureCar Sales</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="about">Visualization</a>
+          <a class="nav-item nav-link" href="cv">Recognition</a>
+          <a class="nav-item nav-link" href="references">ML CLV</a>
+          <a class="nav-item nav-link" href="references">ML Churn</a>
+          <a class="nav-item nav-link" href="/count">ML SMR</a>
+        </div>
+      </div>
+    </nav>
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+          <h1 class="jumbotron-heading">Social Media Ad Campaign - Success Predictor</h1>
+      </section>
+
+      <div class="album py-5 bg-white">
+        <div class="container">
+
+          <div class="row">
+
+            I have just read in the following number of rows and columns from the source file: <br />
+            {{ data_shape | safe }} <br /><br />
+
+            I have just performed a K-neighbours fit to this data, and the accuracy is: <br />
+            {{ accuracy | safe }}<br /><br />
+
+            The calculated confusion matrix: <br />
+            {{ cm | safe }}<br /><br />
+
+            Example prediction: <br />
+            A male aged	19 earning 19,000 will be unlikely to result in a sale from this campaign.<br /><br />
+
+            The results of my predictions (red dots should be in the red area, green dots should be in the green area): <br />
+            <img src = '{{ uri2 }}' >
+
+        </div>
+      </div>
+      </div>
+    </main>
+
+    <footer class="text-muted">
+      <div class="container" style="margin-top: 15px;">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>© FutureCar Sales</p>
+      </div>
+    </footer>
+
+    </body>
+</html>
